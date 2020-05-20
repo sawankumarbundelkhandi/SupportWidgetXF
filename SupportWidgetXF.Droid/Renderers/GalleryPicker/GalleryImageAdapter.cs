@@ -6,7 +6,6 @@ using Android.Widget;
 using Com.Bumptech.Glide;
 using Com.Bumptech.Glide.Load;
 using Com.Bumptech.Glide.Load.Engine;
-using Com.Bumptech.Glide.Request;
 using SupportWidgetXF.Models;
 using SupportWidgetXF.Widgets.Interface;
 
@@ -93,14 +92,16 @@ namespace SupportWidgetXF.Droid.Renderers.GalleryPicker
                 viewHolder.buttonCheckbox.Visibility = ViewStates.Visible;
                 viewHolder.buttonClick.Visibility = ViewStates.Gone;
 
-                Glide.With(context).Load(item.OriginalPath)
-                 .Apply(RequestOptions
-                        .DiskCacheStrategyOf(DiskCacheStrategy.All)
-                        .SkipMemoryCache(false)
-                        .Format(DecodeFormat.PreferRgb565)
-                        .OptionalCenterCrop())
-                 .Thumbnail(0.1f)
-                 .Into(viewHolder.imageView);
+                //Glide.With(context).Load(item.OriginalPath)
+                // .Apply(RequestOptions
+                //        .DiskCacheStrategyOf(DiskCacheStrategy.All)
+                //        .SkipMemoryCache(false)
+                //        .Format(DecodeFormat.PreferRgb565)
+                //        .OptionalCenterCrop())
+                // .Thumbnail(0.1f)
+                // .Into(viewHolder.imageView);
+
+                //TODO
                
                 viewHolder.checkBox.Checked = item.Checked;
 

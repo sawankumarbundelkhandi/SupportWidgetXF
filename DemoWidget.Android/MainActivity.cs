@@ -4,7 +4,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using FFImageLoading;
-using FFImageLoading.Forms.Droid;
+using FFImageLoading.Forms.Platform;
 using SupportWidgetXF.Droid;
 
 namespace DemoWidget.Droid

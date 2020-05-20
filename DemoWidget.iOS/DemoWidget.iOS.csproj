@@ -147,14 +147,6 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms">
-      <Version>3.1.0.697729</Version>
-    </PackageReference>
-    <PackageReference Include="Newtonsoft.Json">
-      <Version>11.0.2</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\DemoWidget\DemoWidget.csproj">
       <Project>{F74774E9-912D-4673-8A0B-F5E08626C4E5}</Project>
       <Name>DemoWidget</Name>
@@ -162,12 +154,19 @@
     <ProjectReference Include="..\SupportWidgetXF.iOS\SupportWidgetXF.iOS.csproj">
       <Project>{A2AA602C-302A-492B-99AB-FFC9CD300FE4}</Project>
       <Name>SupportWidgetXF.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\dc%403x.png" />
     <BundleResource Include="Resources\marvel%403x.png" />
     <BundleResource Include="Resources\icn_droplist%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms">
+      <Version>4.6.0.800</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

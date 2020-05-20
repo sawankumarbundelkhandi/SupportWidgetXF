@@ -3,6 +3,8 @@ using Android.Content;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
 using Android.Widget;
+using Google.Android.Material.BottomNavigation;
+using Google.Android.Material.Tabs;
 using SupportWidgetXF.Droid.Renderers;
 using SupportWidgetXF.Widgets;
 using Xamarin.Forms;

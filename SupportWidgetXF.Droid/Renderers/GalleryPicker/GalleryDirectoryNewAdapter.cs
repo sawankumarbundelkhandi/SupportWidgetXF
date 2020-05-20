@@ -8,7 +8,6 @@ using Com.Bumptech.Glide.Load;
 using Com.Bumptech.Glide.Load.Engine;
 using Com.Bumptech.Glide.Request;
 using SupportWidgetXF.Models;
-using static Android.Support.V7.Widget.RecyclerView;
 
 namespace SupportWidgetXF.Droid.Renderers.GalleryPicker
 {
@@ -60,15 +59,17 @@ namespace SupportWidgetXF.Droid.Renderers.GalleryPicker
             viewHolder.txtTitle.Text = data.IF_GetTitle();
             viewHolder.txtCount.Text = "(" + data.Images.Count + ")";
 
-            var imgPath = data.Images[1].OriginalPath;
-            Glide.With(context).Load(imgPath)
-                .Apply(RequestOptions
-                       .DiskCacheStrategyOf(DiskCacheStrategy.All)
-                       .SkipMemoryCache(false)
-                       .Format(DecodeFormat.PreferRgb565)
-                       .OptionalCenterCrop())
-                .Thumbnail(0.1f)
-                .Into(viewHolder.imgIcon);
+            //var imgPath = data.Images[1].OriginalPath;
+            //Glide.With(context).Load(imgPath)
+            //    .Apply(RequestOptions
+            //           .DiskCacheStrategyOf(DiskCacheStrategy.All)
+            //           .SkipMemoryCache(false)
+            //           .Format(DecodeFormat.PreferRgb565)
+            //           .OptionalCenterCrop())
+            //    .Thumbnail(0.1f)
+            //    .Into(viewHolder.imgIcon);
+            
+            //TODO
 
             return convertView;
         }
